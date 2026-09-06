@@ -35,8 +35,8 @@ Nada mais é necessário — os caminhos são relativos (`./assets/...`).
 
 0. ~~**Canonical**~~ — já ajustado para `https://bemvai.com.br/`. **Importante:** foi adicionado `<meta name="robots" content="noindex, nofollow">` no `<head>` porque a página está publicada em `lp.bemvai.com.br` só para aprovação do cliente — remover essa tag quando subir para `bemvai.com.br` definitivo, senão o Google não indexa o site final. Vale conferir a `og:image` para URL absoluta depois de publicado.
 2. **Números da faixa de autoridade** — hoje são fictícios: `data-counter="500"` (atendimentos) e `data-counter="30"` (associações). Trocar pelos reais.
-3. **Foto de destombamento** — o card 04 de Serviços está com o bloco "FOTO EM BREVE".
-4. **Fotos do Alessandro e da Paula** — a seção Quem Somos tem dois espaços marcados.
+3. ~~**Foto de destombamento**~~ — feito, `assets/svc-destombamento.png`.
+4. ~~**Fotos do Alessandro e da Paula**~~ — feito, `assets/quem-somos-alessandro.png` e `assets/quem-somos-paula.png`.
 5. ~~**Depoimentos**~~ — feito: os 3 cards agora trazem avaliações reais do Google Meu Negócio ("Auto Socorro BemVai - Transporte e Logística", Anápolis-GO, 5,0★/45 avaliações), com link para a página do Google. Conteúdo estático (copiado manualmente), sem chamada de API em runtime — se quiser que atualize sozinho no futuro, precisa de backend com Places API.
 6. **Gotham** — a página pede `Gotham` e cai para `Montserrat`. Se houver licença, colocar os `.woff2` em `assets/fonts/` e adicionar um `@font-face` no `<style>`; nenhuma outra mudança é necessária.
 
