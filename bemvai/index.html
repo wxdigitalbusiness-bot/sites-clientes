@@ -433,14 +433,17 @@
 
 <script>
 (function(){
-  // conversão — clique em WhatsApp ou telefone (GTM dataLayer)
-  window.dataLayer = window.dataLayer || [];
+  // conversão — clique em WhatsApp ou telefone (Google Ads)
   document.addEventListener('click', function(e){
-    var el = e.target.closest('a[href*="wa.me"], a[href^="tel:"]');
-    if (!el) return;
-    window.dataLayer.push({
-      event: el.href.indexOf('wa.me') > -1 ? 'whatsapp_click' : 'phone_click',
-      link_url: el.href
+    var el = e.target.closest('a[href*="marketingimpulso.com/api/w/"], a[href*="marketingimpulso.com/r/wa/"], a[href^="tel:"]');
+    if (!el || typeof gtag !== 'function') return;
+    e.preventDefault();
+    var url = el.href, navigated = false;
+    function go(){ if (!navigated) { navigated = true; window.location = url; } }
+    gtag('event', 'conversion', {
+      send_to: 'AW-18468585013/5hF8CJjChIQdELX8wOZE',
+      event_callback: go,
+      event_timeout: 2000
     });
   });
 
