@@ -433,9 +433,9 @@
 
 <script>
 (function(){
-  // conversão — clique em WhatsApp ou telefone (Google Ads)
+  // conversão — clique em WhatsApp (Google Ads)
   document.addEventListener('click', function(e){
-    var el = e.target.closest('a[href*="marketingimpulso.com/api/w/"], a[href*="marketingimpulso.com/r/wa/"], a[href^="tel:"]');
+    var el = e.target.closest('a[href*="marketingimpulso.com/api/w/"], a[href*="marketingimpulso.com/r/wa/"]');
     if (!el || typeof gtag !== 'function') return;
     e.preventDefault();
     var url = el.href, navigated = false;
