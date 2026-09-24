@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=AW-18468585013"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'AW-18468585013');
-</script>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-5G4TWGJG');</script>
+<!-- End Google Tag Manager -->
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>BemVai Auto Socorro | Guincho 24 Horas em Anápolis e Região</title>
@@ -51,6 +49,10 @@
 </script>
 </head>
 <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5G4TWGJG"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
 
 <div style="font-family:Gotham,'Gotham HTF',Montserrat,sans-serif;background:#0A0F1F;color:#fff;width:100%;overflow:hidden">
 
@@ -433,18 +435,12 @@
 
 <script>
 (function(){
-  // conversão — clique em WhatsApp (Google Ads)
+  // conversão — clique em WhatsApp (evento pro GTM, tag configurada lá dentro)
+  window.dataLayer = window.dataLayer || [];
   document.addEventListener('click', function(e){
     var el = e.target.closest('a[href*="marketingimpulso.com/api/w/"], a[href*="marketingimpulso.com/r/wa/"]');
-    if (!el || typeof gtag !== 'function') return;
-    e.preventDefault();
-    var url = el.href, navigated = false;
-    function go(){ if (!navigated) { navigated = true; window.location = url; } }
-    gtag('event', 'conversion', {
-      send_to: 'AW-18468585013/5hF8CJjChIQdELX8wOZE',
-      event_callback: go,
-      event_timeout: 2000
-    });
+    if (!el) return;
+    window.dataLayer.push({ event: 'whatsapp_click', link_url: el.href });
   });
 
   // faixa de autoridade — contagem crescente
