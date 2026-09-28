@@ -26,6 +26,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   *{box-sizing:border-box}
+  html{scroll-behavior:smooth}
   body{margin:0;background:#0A0F1F}
   img{max-width:100%}
   a{color:#146BFF;text-decoration:none}
@@ -42,7 +43,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     [data-grid-help]{grid-template-columns:repeat(2,minmax(0,1fr))!important}
     [data-grid-diff],[data-grid-bios],[data-grid-reviews]{grid-template-columns:1fr!important}
   }
-  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+  @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}html{scroll-behavior:auto}}
 </style>
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"AutoRepair","name":"BemVai Auto Socorro","description":"Guincho 24 horas, auto socorro, remoção e transporte de veículos leves e pesados, máquinas e equipamentos.","telephone":"+5562991063461","areaServed":["Anápolis","Goiás","Brasil"],"address":{"@type":"PostalAddress","addressLocality":"Anápolis","addressRegion":"GO","addressCountry":"BR"},"openingHoursSpecification":{"@type":"OpeningHoursSpecification","dayOfWeek":["Monday","Tuesday","Wednesday","Thursday","Friday","Saturday","Sunday"],"opens":"00:00","closes":"23:59"}}
@@ -114,7 +115,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ================= SERVIÇOS ================= -->
-  <section style="background:#fff;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
+  <section id="servicos" style="background:#fff;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
     <div style="max-width:1280px;margin:0 auto">
       <div style="max-width:640px;margin:0 auto 64px;text-align:center;display:flex;flex-direction:column;gap:16px;align-items:center">
         <span style="font-family:Gotham,'Gotham HTF',Montserrat,sans-serif;font-weight:800;font-size:13px;letter-spacing:3px;color:#146BFF">O QUE FAZEMOS</span>
@@ -219,7 +220,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ================= DIFERENCIAIS ================= -->
-  <section style="background:#F7F8FA;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
+  <section id="diferenciais" style="background:#F7F8FA;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
     <div style="max-width:1280px;margin:0 auto">
       <div style="max-width:680px;margin:0 auto 64px;text-align:center;display:flex;flex-direction:column;gap:16px;align-items:center">
         <span style="font-family:Gotham,'Gotham HTF',Montserrat,sans-serif;font-weight:800;font-size:13px;letter-spacing:3px;color:#146BFF">POR QUE ESCOLHER A BEMVAI?</span>
@@ -264,7 +265,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 
   <!-- ================= QUEM SOMOS ================= -->
-  <section style="background:#fff;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
+  <section id="quem-somos" style="background:#fff;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
     <div style="max-width:1080px;margin:0 auto">
       <div style="max-width:820px;margin:0 auto 56px;text-align:center;display:flex;flex-direction:column;gap:16px;align-items:center">
         <span style="font-family:Gotham,'Gotham HTF',Montserrat,sans-serif;font-weight:800;font-size:13px;letter-spacing:3px;color:#146BFF">QUEM SOMOS</span>
@@ -309,7 +310,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
   </section>
 
   <!-- ================= DEPOIMENTOS ================= -->
-  <section style="background:#F7F8FA;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
+  <section id="clientes" style="background:#F7F8FA;color:#0A0F1F;padding:clamp(64px,8vw,110px) clamp(20px,4vw,64px)">
     <div style="max-width:1180px;margin:0 auto">
       <div style="max-width:660px;margin:0 auto 48px;text-align:center;display:flex;flex-direction:column;gap:16px;align-items:center">
         <span style="font-family:Gotham,'Gotham HTF',Montserrat,sans-serif;font-weight:800;font-size:13px;letter-spacing:3px;color:#146BFF">DEPOIMENTOS</span>
